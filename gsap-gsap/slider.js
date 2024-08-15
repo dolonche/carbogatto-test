@@ -62,7 +62,7 @@ export function initSlider(element) {
                 ScrollTrigger.create({
                     trigger: item,
                     containerAnimation: scrollTween,
-                    start: 'left 636px',
+                    start: 'left 506px',
                     end: 'left 200px',
                     scrub: true,
                     animation: gsap.to(item, {minWidth: '530px', ease: 'none'}),
@@ -105,7 +105,7 @@ export function initSlider(element) {
                     let lastItemOffsetLeft = getOriginalPosition(document.querySelector('.slider__item:last-child')).originalLeft;
                     let targetElemOffsetLeft = targetElemPos.originalLeft + (targetElem.querySelector('.slider__item-content').offsetWidth - targetElem.offsetWidth);
                     let percentageOffsetLeftTarget = targetElemOffsetLeft / lastItemOffsetLeft;
-                    gsap.to(window, {duration: 2, scrollTo: (SLIDER_LENGTH * percentageOffsetLeftTarget - 307)});
+                    gsap.to(window, {duration: 2, scrollTo: (SLIDER_LENGTH * percentageOffsetLeftTarget - 277)});
                 });
             });
             let isDragging = false;
