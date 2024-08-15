@@ -1,0 +1,10 @@
+@import 'styles/normalize';
+@import 'styles/fonts';
+@import "styles/variables";
+@import "styles/global";
+
+// blocks
+@import "styles/blocks/container";
+@import "styles/blocks/back";
+@import "styles/blocks/page-main";
+@import "styles/blocks/slider";

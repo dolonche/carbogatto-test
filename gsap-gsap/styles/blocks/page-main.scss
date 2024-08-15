@@ -1,0 +1,11 @@
+.page-main {
+  padding-left: 23px;
+  padding-right: 28px;
+  height: 100vh;
+}
+@media (max-width: 900px) {
+  .page-main {
+    padding-inline: 20px;
+    height: auto;
+  }
+}
