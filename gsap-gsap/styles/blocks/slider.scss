@@ -164,7 +164,7 @@
 
     &__main {
       flex-direction: column;
-      padding-block: 100px;
+      padding-bottom: 100px;
     }
 
     &__nav {
@@ -188,10 +188,6 @@
         height: calc(65vh - 82px);
         padding-bottom: 0;
       }
-      &--intro {
-        padding-top: 30px;
-        height: calc(65vh - 164px);
-      }
 
       &-content {
         padding: 0;
@@ -206,6 +202,9 @@
       &-title {
         font-size: 24px;
         line-height: 32px;
+        br {
+          display: none;
+        }
       }
 
       &-topic {
