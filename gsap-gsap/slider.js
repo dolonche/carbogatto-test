@@ -67,7 +67,9 @@ export function initSlider(element) {
                     scrub: true,
                     animation: gsap.to(item, {minWidth: '530px', ease: 'none'}),
                     onUpdate: (self) => {
-                        item.parentNode.style.marginRight = `${150 * self.progress}px`;
+                        if (index > 0) {
+                            item.parentNode.style.marginRight = `${150 * self.progress}px`;
+                        }
                         if (self.progress > 0) {
                             item.parentNode.style.borderLeftColor = 'transparent';
                         } else {
@@ -103,7 +105,7 @@ export function initSlider(element) {
                     let lastItemOffsetLeft = getOriginalPosition(document.querySelector('.slider__item:last-child')).originalLeft;
                     let targetElemOffsetLeft = targetElemPos.originalLeft + (targetElem.querySelector('.slider__item-content').offsetWidth - targetElem.offsetWidth);
                     let percentageOffsetLeftTarget = targetElemOffsetLeft / lastItemOffsetLeft;
-                    gsap.to(window, {duration: 2, scrollTo: (SLIDER_LENGTH * percentageOffsetLeftTarget - 157)});
+                    gsap.to(window, {duration: 2, scrollTo: (SLIDER_LENGTH * percentageOffsetLeftTarget - 307)});
                 });
             });
             let isDragging = false;
